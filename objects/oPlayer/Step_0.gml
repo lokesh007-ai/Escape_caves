@@ -4,12 +4,12 @@
 ysp+=0.1
 xsp=0
 
-if keyboard_check(vk_left)
+if keyboard_check(ord("A"))
 {
 xsp=-1
 }
 
-if keyboard_check(vk_right)
+if keyboard_check(ord("D"))
 {
 xsp=+1
 }
@@ -17,7 +17,7 @@ xsp=+1
 if place_meeting(x,y+1,oSolid)
 {
 ysp=0
-if keyboard_check(vk_up)
+if keyboard_check(vk_space)
 {
 ysp=-2.5
 }
